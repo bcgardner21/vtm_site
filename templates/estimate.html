@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %} Estimator {% endblock %}
+
+{% block body %} 
+
+
+<h2>Create an Estimate</h2>
+<br>
+<form action="/price" method="POST">    
+   
+ <label for="radius">
+        Tank Radius (in inches): 
+        <input type="text" id="radius" name="radius" required autofocus /> 
+        </label>
+        <br>
+        <br>
+        <label for="numTwo">
+        Tank Height (in inches): <input type="text" id="height" name="height" required /> 
+        </label>
+        <br><br>
+        <input type="submit" value="Calculate cost">
+
+</form>  
+
+{% if myValue %}
+<p>Total Cost Estimate: {{ myValue }}</p>
+{% endif %}
+
+ {% endblock %}
