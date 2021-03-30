@@ -1,16 +1,24 @@
 #calc.py
 
 
-def addTwoNumbers(numberOne, numberTwo):
-    return (numberOne + numberTwo)
+
+pi = 3.14
+
+
+
+
+
+
+def totalPrice(radius, height):
+    return (sqrFoot * labMatCost)
     
 
 def main():
-    numberOne = int(input("What is your first number?"))
-    numberTwo = int(input("What is your second number?"))
-    mySum = addTwoNumbers(numberOne, numberTwo)
+    radius = int(input("Radius of tank (in inches)"))
+    height = int(input("Height of tank (in inches)"))
+    totalPrice = totalPrice(radius, height)
     
-    print(mySum)
+    print(totalPrice)
 
     
 main()
