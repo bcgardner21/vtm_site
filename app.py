@@ -20,9 +20,10 @@ def add():
     if request.method =='POST':
         radius = int(request.form['radius'])
         height = int(request.form['height'])
+        totalPrice = radius + height
+        print(totalPrice)
 
-
-    return render_template('estimate.html')
+    return render_template('estimate.html', myValue=totalPrice)
 
 if __name__ == '__main__':
     app.run(debug=True)
